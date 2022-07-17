@@ -191,7 +191,7 @@ body {
 }
 
 .principle-item {
-  flex-basis: calc ((100% - 90px) / 4) ;
+  flex-basis: calc((100% - 90px) / 4) ;
 }
 
 .principles-title {
@@ -319,11 +319,12 @@ body {
 }
 
 .portfolio-description {
-  padding-top: 20;
+  padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;
   padding-left: 24px;
   border: 1px solid #EEEEEE;
+  border-top: none;
 }
 
 .portfolio-card-title {
@@ -337,11 +338,6 @@ body {
 }
 
 .portfolio-card-description {
-  display: block;
-  margin-bottom: 20px;
-  margin-right: 24px;
-  margin-left: 24px;
-
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color)
