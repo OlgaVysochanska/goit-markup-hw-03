@@ -61,14 +61,14 @@ body {
 
 .header {
   border-bottom: 1px solid #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .page-header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .page-nav {
@@ -114,7 +114,7 @@ body {
   color: var(--accent-color)
 }
 
-.menu-item {
+.menu-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -132,7 +132,7 @@ body {
   color: var(--accent-color);
 }
 
-.contacts-header.number {
+.contacts-header:last-child {
   margin-left: 50px;
 }
 
@@ -145,6 +145,10 @@ body {
 }
 
 .main-title {
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+
   margin-bottom: 30px;
    font-weight: 900;
     font-size: 44px;
@@ -188,7 +192,7 @@ body {
 }
 
 .principle-item {
-  flex-basis: calc((100% - 90) / 4);
+  flex-basis: calc ((100% - 90) / 4) ;
 }
 
 .principles-title {
@@ -216,6 +220,10 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.section.activity-section {
+  padding-top: 0;
 }
 
 .activity {
@@ -252,7 +260,7 @@ body {
 }
 
 .team-description-title {
-  margin: 10px;
+  margin-bottom: 10px;
   font-weight: 500;
     line-height: 1.2;
     text-align: center;
@@ -275,6 +283,10 @@ body {
 }
 
 .filter-button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
   background: #F5F4FA;
   border-radius: 4px;
   border: none;
@@ -308,15 +320,16 @@ body {
 }
 
 .portfolio-description {
+  padding-top: 20;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
   border: 1px solid #EEEEEE;
 }
 
 .portfolio-card-title {
   display: block;
-  margin-top: 20px;
   margin-bottom: 4px;
-  margin-right: 24px;
-  margin-left: 24px;
 
   font-weight: 700;
     font-size: 18px;
@@ -340,7 +353,6 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
   background-color: #2F303A;
 }
 
@@ -349,13 +361,15 @@ body {
   margin-bottom: 20px;
 }
 
+.logo.logo-footer {
+  margin-right: 0;
+}
+
 .logo-footer-colour {
   color: var(--primary-text-color-dark-theme);
 }
 
 .address {
-  max-width: 240px;
-
   font-style: normal;
     font-size: 14px;
     line-height: 1.7;
